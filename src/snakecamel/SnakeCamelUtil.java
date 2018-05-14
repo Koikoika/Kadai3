@@ -1,6 +1,14 @@
 package snakecamel;
 
 public class SnakeCamelUtil {
+	
+	public static void main(String[] args) {
+		System.out.println(capitalize("a"));
+		System.out.println(uncapitalize("A"));
+		
+		System.out.println(snakeToCamelcase("abc_def"));
+		System.out.println(camelToSnakecase("AbcDef"));
+	}
 
 	public static String snakeToCamelcase(String snake_case) {//入力された小文字の文字列を_で分けてそれぞれの最初の文字を大文字にする
 		String[] words = snake_case.split("_");
